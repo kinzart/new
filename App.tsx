@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import AppLoading from 'expo-app-loading';
-import { Welcome } from './src/pages/Welcome';
+import Routes from './src/routes';
 import {
   useFonts,/*a hook*/
   Jost_400Regular,
@@ -14,12 +14,12 @@ export default function App() {
     Jost_600SemiBold,
   });
 
-  if (fontsLoaded)
+  if (!fontsLoaded)
     return <AppLoading />
 
   return (
 
-    <Welcome />
+    <Routes />
   )
 }
 
