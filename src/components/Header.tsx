@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingVertical: 20,
         marginTop: getStatusBarHeight(),
-        backgroundColor: colors.green,
+        backgroundColor: colors.white,
         paddingHorizontal: 30
 
     },
